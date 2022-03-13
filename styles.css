@@ -9,16 +9,21 @@ h1 {
 	}
 h2 {
 	text-align:center;
-	font-size:30px
+	font-size:30px;
 }
 table {
 	font-size:20px;
+
 	}
+hr{
+	width:100%;
+}
 
 .center{
 	text-align: center;
 	float: center;
 	font-size: 30px;
+
 }
 
 .left{
@@ -27,7 +32,7 @@ table {
 }
 .menu{
 	float:center;
-	width:50%;
+	text-align:left;
 	margin-right:auto;
 	margin-left:auto;
 
@@ -35,10 +40,13 @@ table {
 }
 
 .menuL{
-	float:left;
+	float:center;
+	text-align:center;
 	border:2px outset black;
 	width:200px;
 	font-size:25px;
+	margin-right:auto;
+	margin-left:auto;
 }
 
 .WebContainer{
