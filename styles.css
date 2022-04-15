@@ -40,13 +40,13 @@ hr{
 }
 
 .menuL{
-	float:center;
+	display: inline;
+
 	text-align:center;
 	border:2px outset black;
 	width:200px;
 	font-size:25px;
-	margin-right:auto;
-	margin-left:auto;
+
 }
 
 .WebContainer{
