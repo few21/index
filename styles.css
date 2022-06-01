@@ -34,16 +34,22 @@ hr{
 	float:center;
 	text-align:left;
 	margin-right:auto;
-	margin-left:auto;
-
-			
+	margin-left:auto;	
 }
+
+.topCSS{
+	text-align:center;
+	font-size:20px;
+
+		
+}
+
 
 .menuL{
 	display: inline;
 
 	text-align:center;
-	border:2px outset black;
+	
 	width:200px;
 	font-size:25px;
 
