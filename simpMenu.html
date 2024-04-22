@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Products</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+		
+		
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		  }
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		  }
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		  }
+
+		.dropdown-content a:hover {
+			background-color: #f1f1f1;
+		  }
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		  }
+
+		.dropdown:hover .dropbtn {
+			background-color: #3e8e41;
+		  }
+	
+    </style>
+</head>
+
+<body>
+    <h1 id="top">Products</h1>
+    <div style="text-align:center;">
+        <div class="menuL">
+            <a href="index.html">Home</a>
+            <a href="simpMenu.html">Drinks</a>
+            <a href="others.html">Others</a>
+        </div>
+    </div>
+    <hr>
+    <br>
+
+    <div style="text-align:center; display:inline;">
+		<div style="text-align:center;">
+			<div class="dropdown">
+			  <button class="dropbtn">Menu List</button>
+			  <div class="dropdown-content">
+				<a href="#water">Water</a>
+				<a href="#can">Can Soda</a>
+				<a href="#20oz">20oz Bottles</a>
+				<a href="#glass">Glass</a>
+				<a href="#Liter">1 Liter</a>
+				<a href="#10oz">10oz Bottles</a>
+				<a href="#twoLiter">2 Liter</a>
+				<a href="#gat">Gatorade 20oz</a>
+				<a href="#gat28">Gatorade 28oz</a>
+				<a href="#monster">Monster Energy</a>
+				<a href="#arizona">Arizona</a>
+				<a href="#sPellegrino">San Pellegrino</a>
+				<a href="#minutemaid">Minute Maid</a>
+				<a href="#tropicana">Tropicana</a>
+				<a href="#vitamin">Vitamin Water</a>
+				<a href="#coconut">Coconut Water</a>
+				<a href="#redbull">RedBull</a>
+				<a href="#nesquik">Nesquik</a>
+				<a href="#nutrament">Nutrament</a>
+				<a href="#starbuck">Starbuck</a>
+
+		</div>
+</div>
+
+    </div
+	
+	
+	
+	<div style="align:center;">
+        <h2 id="water"> Water</h2>
+        <table align=center id="waterTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+    <div style="align:center;">
+        <h2 id="can"> Can Soda</h2>
+        <table align=center id="canSodaTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+
+
+    <div style="align:center;">
+        <h2 id="20oz"> 20oz Bottles</h2>
+        <table align=center id="bottlesTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+
+    <div style="align:center;">
+        <h2 id="glass"> Glass Bottles</h2>
+        <table align=center id="glassTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+
+    <div style="align:center;">
+        <h2 id="Liter"> 1 Liter</h2>
+        <table align=center id="literTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+
+    <div style="align:center;">
+        <h2 id="10oz"> 10oz</h2>
+        <table align=center id="10ozTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+	<div style="align:center;">
+        <h2 id="twoLiter"> 2 Liter</h2>
+        <table align=center id="twoLiterTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>	
+	
+    <div style="align:center;">
+        <h2 id="gat"> Gatorade 20oz</h2>
+        <table align=center id="gatoradeTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+    <div style="align:center;">
+        <h2 id="gat28"> Gatorade 28oz</h2>
+        <table align=center id="gatorade28Table"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+    <div style="align:center;">
+        <h2 id="monster"> Monster</h2>
+        <table align=center id="monsterTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+		
+    <div style="align:center;">
+        <h2 id="arizona"> Arizona 24oz</h2>
+        <table align=center id="arizonaTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+
+    <div style="align:center;">
+        <h2 id="sPellegrino"> San Pellegrino</h2>
+        <table align=center id="sPellegrinoTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+    <div style="align:center;">
+        <h2 id="minutemaid"> MinuteMaid Juice 12oz x 24</h2>
+        <table align=center id="mmJuiceTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+
+    <div style="align:center;">
+        <h2 id="tropicana"> Tropicana Juice 15.2oz x 12</h2>
+        <table align=center id="tJuiceTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+
+    <div style="align:center;">
+        <h2 id="vitamin"> Vitamin Water</h2>
+        <table align=center id="vitaTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+		
+    <div style="align:center;">
+        <h2 id="coconut"> Coconut Water</h2>
+        <table align=center id="cocoTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+    <div style="align:center;">
+        <h2 id="redbull"> Red Bull</h2>
+        <table align=center id="rbTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>	
+		
+	
+    <div style="align:center;">
+        <h2 id="nesquik"> Nesquik 14oz x 12</h2>
+        <table align=center id="nesquickTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>	
+	
+    <div style="align:center;">
+        <h2 id="nutrament"> Nutrament 12oz x 12</h2>
+        <table align=center id="nutramentTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>	
+	
+    <div style="align:center;">
+        <h2 id="starbuck"> Starbuck</h2>
+        <table align=center id="starbuckTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>	
+	
+	
+	
+    <script>
+        const waterData = [
+            { imgSrc: "Image/poland.jpg", height: 100, width: 90, productName: "Poland 16oz x 40" },
+            { imgSrc: "Image/polandGal.jpg", height: 100, width: 90, productName: "Poland Gallon x 6" },
+            { imgSrc: "Image/poland1L.jpg", height: 100, width: 90, productName: "Poland 1L x 15" },
+		
+            { imgSrc: "Image/poland24.jpg", height: 100, width: 90, productName: "Poland 24oz SportCap x 24" },
+            { imgSrc: "Image/poland15.jpg", height: 100, width: 100, productName: "Poland 1.5L x 12" },
+            { imgSrc: "Image/poland8.jpg", height: 100, width: 90, productName: "Poland 8oz x 48" },		
+			
+            { imgSrc: "Image/poland3L.jpg", height: 100, width: 90, productName: "Poland 3L x 6" },
+            { imgSrc: "Image/mark16.jpg", height: 100, width: 145, productName: "Kirkland/Member's Mark 16oz x 40" },
+            { imgSrc: "Image/mark8.jpg", height: 100, width: 145, productName: "Kirkland/Member's Mark 8oz x 80" },			
+			
+            { imgSrc: "Image/dasani.jpg", height: 100, width: 90, productName: "Dasani 16oz x 32" },
+            { imgSrc: "Image/essentia20.jpg", height: 100, width: 90, productName: "Essentia 20oz x 24" },
+            { imgSrc: "Image/essentia15.jpg", height: 100, width: 90, productName: "Essentia 1.5L x 12" },			
+
+            { imgSrc: "Image/fiji1L.jpg", height: 100, width: 90, productName: "Fiji 1L x 12" },
+            { imgSrc: "Image/fiji16.jpg", height: 100, width: 90, productName: "Fiji 16oz x 24" },
+            { imgSrc: "Image/fiji15.jpg", height: 100, width: 90, productName: "Fiji 1.5L x 12" },	
+			
+            { imgSrc: "Image/evian1L.jpg", height: 100, width: 90, productName: "Evian 1L x 12" },
+            { imgSrc: "Image/evian15.jpg", height: 100, width: 90, productName: "Evian 1.5L x 12" },
+            { imgSrc: "Image/evian16.jpg", height: 100, width: 90, productName: "Evian 500ml x 24" },	
+
+            { imgSrc: "Image/smart1L.jpg", height: 100, width: 90, productName: "SmartWater 1L x 12" },
+            { imgSrc: "Image/smart15.jpg", height: 111, width: 35, productName: "SmartWater 1.5L x 12" },
+            { imgSrc: "Image/smart20.jpg", height: 100, width: 90, productName: "SmartWater 20oz x 24" },	
+
+            { imgSrc: "Image/smart24.jpg", height: 100, width: 90, productName: "SmartWater 24oz x 24" },
+            { imgSrc: "Image/smartAlk.jpg", height: 100, width: 90, productName: "SmartWater +alkaline 1L x 12" },
+
+
+
+			
+        ];
+		
+        const canSodaData = [
+            { imgSrc: "Image/coke.jpg", height: 100, width: 70, productName: "Coca Cola" },
+            { imgSrc: "Image/dietcoke.jpg", height: 100, width: 110, productName: "Diet Coke" },
+            { imgSrc: "Image/cokezero.jpg", height: 100, width: 150, productName: "Coke Zero" },
+			
+            { imgSrc: "Image/cherrycoke.jpg", height: 100, width: 60, productName: "Cherry Coca-Cola" },
+            { imgSrc: "Image/vanillacoke.jpg", height: 100, width: 110, productName: "Vanilla Coke" },
+            { imgSrc: "Image/schseltzer.jpg", height: 90, width: 50, productName: "Schweppes Seltzer" },
+			
+            { imgSrc: "Image/schginger.jpg", height: 100, width: 110, productName: "Schweppes Ginger" },
+            { imgSrc: "Image/sprite.jpg", height: 100, width: 110, productName: "Sprite" },	
+            { imgSrc: "Image/dietsprite.jpg", height: 100, width: 100, productName: "Diet Sprite" },
+			
+            { imgSrc: "Image/seltzer.jpg", height: 100, width: 100, productName: "Canada Dry Seltzer" },
+            { imgSrc: "Image/lemonseltzer.jpg", height: 100, width: 110, productName: "Canada Lemon Seltzer</" },
+            { imgSrc: "Image/gingerale.jpg", height: 90, width: 50, productName: "Canada Dry Gingerale" },
+					
+            { imgSrc: "Image/dietginger.jpg", height: 100, width: 130, productName: "Diet Ginger Ale" },
+            { imgSrc: "Image/canadaClub.jpg", height: 100, width: 100, productName: "Canada Dry Club Soda" },
+            { imgSrc: "Image/seagramginger.jpg", height: 100, width: 110, productName: "Seagram's Ginger" },
+
+            { imgSrc: "Image/pepsi.jpg", height: 100, width: 110, productName: "Pepsi" },
+            { imgSrc: "Image/dietpepsi.jpg", height: 100, width: 100, productName: "Diet Pepsi" },
+            { imgSrc: "Image/fresca.jpg", height: 100, width: 50, productName: "Fresca" },
+
+            { imgSrc: "Image/fantaorange.jpg", height: 100, width: 55, productName: "Fanta Orange" },
+            { imgSrc: "Image/fantapineapple.jpg", height: 100, width: 110, productName: "Fanta Pineapple" },
+            { imgSrc: "Image/welchGrape.jpg", height: 100, width: 110, productName: "Welch Grape" },
+
+            { imgSrc: "Image/hawaiian.jpg", height: 100, width: 100, productName: "Hawaiian Punch" },
+            { imgSrc: "Image/sunkistgrape.jpg", height: 100, width: 100, productName: "Sunkist Grape" },
+            { imgSrc: "Image/sunkistOrange.jpg", height: 100, width: 55, productName: "Sunkist Orange" },	
+			
+            { imgSrc: "Image/dietsunkist.jpg", height: 100, width: 100, productName: "Diet Sunkist Orange" },
+            { imgSrc: "Image/brisk.jpg", height: 100, width: 100, productName: "Brisk Ice Tea" },
+            { imgSrc: "Image/rootBeer.jpg", height: 100, width: 110, productName: "A&W Root Beer" },	
+			
+            { imgSrc: "Image/anw.jpg", height: 100, width: 100, productName: "A&W Cream" },
+            { imgSrc: "Image/7up.jpg", height: 100, width: 110, productName: "7up" },
+            { imgSrc: "Image/mountain.jpg", height: 100, width: 110, productName: "Mountain Dew" },				
+			
+            { imgSrc: "Image/drpepper.jpg", height: 100, width: 100, productName: "Dr. Pepper" },
+            { imgSrc: "Image/dietpepper.jpg", height: 100, width: 100, productName: "Diet Dr. Pepper" },
+            { imgSrc: "Image/herbalTea.jpg", height: 100, width: 110, productName: "王老吉 Herbal Tea" },				
+			
+			
+        ];
+
+        const bottlesData = [
+            { imgSrc: "Image/bCoke.jpg", height: 100, width: 100, productName: "Coca Cola" },
+            { imgSrc: "Image/bDcoke.jpg", height: 100, width: 65, productName: "Diet Coca Cola" },
+            { imgSrc: "Image/bCokeZ.jpg", height: 100, width: 100, productName: "Coke Zero" },
+
+            { imgSrc: "Image/bcherrycoke.jpg", height: 100, width: 40, productName: "Cherry Coke" },
+            { imgSrc: "Image/bvanillacoke.jpg", height: 100, width: 55, productName: "Vanilla Coke" },
+            { imgSrc: "Image/bsprite.jpg", height: 100, width: 100, productName: "Sprite" },
+
+            { imgSrc: "Image/bdietsprite.jpg", height: 100, width: 35, productName: "Diet Sprite" },
+            { imgSrc: "Image/bfantaorange.jpg", height: 100, width: 35, productName: "Fanta Orange" },
+            { imgSrc: "Image/bfantapineapple.jpg", height: 100, width: 35, productName: "Fanta Pineapple" },
+
+            { imgSrc: "Image/bfantastrawberry.jpg", height: 100, width: 35, productName: "Fanta Strawberry" },
+            { imgSrc: "Image/bmmBB.jpg", height: 110, width: 75, productName: "Minute Maid Blue Raspberry" },
+            { imgSrc: "Image/bmmLemon.jpg", height: 100, width: 75, productName: "Minute Maid Lemonade" },
+
+            { imgSrc: "Image/bmmPLemon.jpg", height: 100, width: 100, productName: "Minute Maid Pink Lemonade" },
+            { imgSrc: "Image/bSeagramGinger.jpg", height: 100, width: 100, productName: "Seagram Ginger" },
+            { imgSrc: "Image/bDrPepper.jpg", height: 100, width: 100, productName: "Dr.Pepper" },
+
+            { imgSrc: "Image/bDietDrPepper.jpg", height: 100, width: 100, productName: "Diet Dr.Pepper" },
+            { imgSrc: "Image/bCanadaGinger.jpg", height: 100, width: 100, productName: "Canada Ginger" },
+            { imgSrc: "Image/bDCanadaGinger.jpg", height: 100, width: 100, productName: "Canada Diet Ginger" },
+
+            { imgSrc: "Image/bCanadaSeltzer.jpg", height: 100, width: 100, productName: "Canada Seltzer" },
+            { imgSrc: "Image/bCanadaLSeltzer.jpg", height: 100, width: 100, productName: "Canada Lemon Seltzer" },
+            { imgSrc: "Image/bCanadaOSeltzer.jpg", height: 100, width: 100, productName: "Canada Orange Seltzer" },
+
+            { imgSrc: "Image/bCanadaPSeltzer.jpg", height: 100, width: 100, productName: "Canada Pomegranate Seltzer" },
+
+            { imgSrc: "Image/bPepsi.jpg", height: 100, width: 55, productName: "Pepsi" },
+            { imgSrc: "Image/bDietPepsi.jpg", height: 100, width: 100, productName: "Diet Pepsi" },
+            { imgSrc: "Image/bCherryPepsi.jpg", height: 100, width: 35, productName: "Cherry Pepsi" },
+
+            { imgSrc: "Image/bRoot.jpg", height: 100, width: 100, productName: "A&W Root Beer" },
+            { imgSrc: "Image/bDRoot.jpg", height: 100, width: 100, productName: "A&W Diet Root Beer" },
+            { imgSrc: "Image/bCream.jpg", height: 100, width: 100, productName: "A&W Cream" },
+
+            { imgSrc: "Image/bSunkistOrange.jpg", height: 100, width: 100, productName: "Sunkist Orange" },
+            { imgSrc: "Image/bDSunkistOrange.jpg", height: 100, width: 55, productName: "Sunkist Diet Orange" },
+            { imgSrc: "Image/bSunkistPineapple.jpg", height: 100, width: 35, productName: "Sunkist Pineapple" },
+
+            { imgSrc: "Image/bBrisk.jpg", height: 100, width: 100, productName: "Brisk Ice Tea" },
+            { imgSrc: "Image/bMountainDew.jpg", height: 100, width: 35, productName: "Mountain Dew" },
+            { imgSrc: "Image/b7Up.jpg", height: 100, width: 55, productName: "7-Up" },
+
+            { imgSrc: "Image/bHawaiian.jpg", height: 100, width: 100, productName: "Hawaiian Punch" },
+            { imgSrc: "Image/bSchweppesG.jpg", height: 100, width: 35, productName: "Schweppes Ginger" },
+            { imgSrc: "Image/bSchweppesS.jpg", height: 100, width: 100, productName: "Schweppes Original Seltzer" },
+
+            { imgSrc: "Image/bSchweppesBCS.jpg", height: 100, width: 100, productName: "Schweppes Black Cherry Seltzer" },
+            { imgSrc: "Image/bSchweppesL.jpg", height: 100, width: 100, productName: "Schweppes Lemon Seltzer" },
+            { imgSrc: "Image/bGrape.jpg", height: 100, width: 100, productName: "Welch Grape" },
+        ];
+
+        const glassData = [
+            { imgSrc: "Image/coke8.jpg", height: 100, width: 100, productName: "Coke 8oz" },
+            { imgSrc: "Image/sprite8.jpg", height: 100, width: 100, productName: "Sprite 8oz" },
+            { imgSrc: "Image/dietCoke8.jpg", height: 100, width: 100, productName: "Diet Coke 8oz" },
+
+            { imgSrc: "Image/mexCoke.jpg", height: 100, width: 95, productName: "Mexican Coke 12oz" },
+            { imgSrc: "Image/mexSprite.jpg", height: 100, width: 35, productName: "Mexican Sprite 12oz" },
+            { imgSrc: "Image/mexFanta.jpg", height: 100, width: 110, productName: "Mexican Fanta 12oz" },
+			
+            { imgSrc: "Image/martApple.jpg", height: 80, width: 110, productName: "Martinelli Apple 10oz x 12" },
+            { imgSrc: "Image/maltaIndia.jpg", height: 100, width: 110, productName: "Malta India" },
+            { imgSrc: "Image/jrApple.jpg", height: 100, width: 30, productName: "Jarritos Apple" },
+
+            { imgSrc: "Image/jrFruitPunch.jpg", height: 100, width: 110, productName: "Jarritos FP  x 12" },
+            { imgSrc: "Image/jrGrapefruit.jpg", height: 100, width: 110, productName: "Jarritos Grapefruit" },
+            { imgSrc: "Image/jrLime.jpg", height: 100, width: 110, productName: "Jarritos Lime" },
+
+            { imgSrc: "Image/jrMango.jpg", height: 100, width: 110, productName: "Jarritos Mango" },
+            { imgSrc: "Image/jrOrange.jpg", height: 100, width: 110, productName: "Jarritos Orange" },
+            { imgSrc: "Image/jrPineapple.jpg", height: 100, width: 75, productName: "Jarritos Pineapple" },
+
+            { imgSrc: "Image/jrTamarind.jpg", height: 100, width: 110, productName: "Jarritos Tamarind" },
+            { imgSrc: "Image/jrSangria.jpg", height: 100, width: 110, productName: "Sangria Natural Flavor Soda" },
+
+	   ];
+	   
+        const b10ozData = [
+            { imgSrc: "Image/club10.jpg", height: 100, width: 100, productName: "CanadaDry Club Soda" },
+            { imgSrc: "Image/ginger10.jpg", height: 100, width: 100, productName: "CanadaDry Gingerale" },
+            { imgSrc: "Image/tonic10.jpg", height: 100, width: 95, productName: "CanadaDry Tonic Water" },
+	   ];
+	   
+        const literData = [
+            { imgSrc: "Image/lSprite.jpg", height: 100, width: 100, productName: "Sprite" },
+            { imgSrc: "Image/lCoke.jpg", height: 100, width: 100, productName: "Coca Cola" },
+            { imgSrc: "Image/lPepsi.jpg", height: 100, width: 95, productName: "Pepsi" },
+
+            { imgSrc: "Image/lClub.jpg", height: 100, width: 100, productName: "CA Club Soda" },
+            { imgSrc: "Image/lTonic.jpg", height: 100, width: 100, productName: "CA Tonic Water" },
+            { imgSrc: "Image/lSeltzer.jpg", height: 100, width: 95, productName: "CA Seltzer" },
+
+            { imgSrc: "Image/lLemon.jpg", height: 100, width: 45, productName: "CA Lemon Seltzer" },
+            { imgSrc: "Image/lOrange.jpg", height: 100, width: 100, productName: "CA Orange Seltzer" },
+			{ imgSrc: "Image/lGinger.jpg", height: 100, width: 100, productName: "CA Ginger Ale" },
+			
+            { imgSrc: "Image/lDietGinger.jpg", height: 120, width: 88, productName: "CA Diet Ginger Ale" },
+
+
+	   ];
+	   
+        const twoLiterData = [
+            { imgSrc: "Image/tlSprite.jpg", height: 100, width: 100, productName: "Sprite" },
+            { imgSrc: "Image/tlCoke.jpg", height: 100, width: 100, productName: "Coca Cola" },
+            { imgSrc: "Image/tlPepsi.jpg", height: 100, width: 110, productName: "Pepsi" },
+
+            { imgSrc: "Image/tlCokeZero.jpg", height: 100, width: 100, productName: "Coke Zero" },
+            { imgSrc: "Image/tlDietCoke.jpg", height: 100, width: 100, productName: "Diet Coke" },
+            { imgSrc: "Image/tlDietPepsi.jpg", height: 100, width: 95, productName: "Diet Pepsi" },
+
+            { imgSrc: "Image/tlLemon.jpg", height: 100, width: 100, productName: "CA Lemon Seltzer" },
+            { imgSrc: "Image/tlOrange.jpg", height: 100, width: 100, productName: "CA Orange Seltzer" },
+			{ imgSrc: "Image/tlSeltzer.jpg", height: 100, width: 100, productName: "CA Seltzer" },
+			
+			{ imgSrc: "Image/tlGinger.jpg", height: 100, width: 100, productName: "CA Ginger Ale" },
+			{ imgSrc: "Image/tlDGinger.jpg", height: 100, width: 100, productName: "CA Diet Ginger Ale" },
+			{ imgSrc: "Image/tlSSeltzer.jpg", height: 100, width: 100, productName: "Schweppes Seltzer" },
+
+			{ imgSrc: "Image/tlSGinger.jpg", height: 100, width: 100, productName: "Schweppes Ginger Ale" },
+			{ imgSrc: "Image/tlFOrange.jpg", height: 100, width: 100, productName: "Fanta Orange" },
+			{ imgSrc: "Image/tlFPineapple.jpg", height: 100, width: 100, productName: "Fanta Pineapple" },
+
+			{ imgSrc: "Image/tlSOrange.jpg", height: 100, width: 100, productName: "Sunkist Orange" },
+			{ imgSrc: "Image/tlSPineapple.jpg", height: 100, width: 100, productName: "Sunkist Pineapple" },
+			{ imgSrc: "Image/tlDrPepper.jpg", height: 100, width: 40, productName: "Dr.Pepper" },
+
+			{ imgSrc: "Image/tlMD.jpg", height: 100, width: 40, productName: "Mountain Dew" },
+			{ imgSrc: "Image/tlBrisk.jpg", height: 100, width: 100, productName: "Brisk Ice Tea" },
+			{ imgSrc: "Image/tl7.jpg", height: 100, width: 100, productName: "7-Up" },
+
+	   ];
+	   
+	   
+        const gataradeData = [
+            { imgSrc: "Image/blue.jpg", height: 100, width: 100, productName: "Blue" },
+            { imgSrc: "Image/glemon.jpg", height: 100, width: 90, productName: "Lemon" },
+            { imgSrc: "Image/gfp.jpg", height: 100, width: 100, productName: "Fruit Punch x 28" },
+
+            { imgSrc: "Image/gorange.jpg", height: 100, width: 55, productName: "Orange" },
+            { imgSrc: "Image/fgc.jpg", height: 100, width: 155, productName: "Frost Glacier Cherry" },
+            { imgSrc: "Image/gf.jpg", height: 100, width: 100, productName: "Glacier Freeze" },
+			
+            { imgSrc: "Image/gatMix28.jpg", height: 100, width: 100, productName: "Mix x 28" },
+
+			
+        ];
+		
+        const gatarade28Data = [
+            { imgSrc: "Image/blue28.jpg", height: 100, width: 45, productName: "Blue" },
+            { imgSrc: "Image/glemon28.jpg", height: 100, width: 45, productName: "Lemon" },
+            { imgSrc: "Image/gfp28.jpg", height: 100, width: 45, productName: "Fruit Punch" },
+
+            { imgSrc: "Image/gorange28.jpg", height: 100, width: 55, productName: "Orange" },
+            { imgSrc: "Image/fgc28.jpg", height: 100, width: 110, productName: "Frost Glacier Cherry" },
+            { imgSrc: "Image/gf28.jpg", height: 100, width: 55, productName: "Glacier Freeze" },
+			
+            { imgSrc: "Image/gatGrape28.jpg", height: 100, width: 55, productName: "Grape" },
+        ];	
+
+        const monsterData = [
+            { imgSrc: "Image/green.jpg", height: 100, width: 110, productName: "Green" },
+            { imgSrc: "Image/white.jpg", height: 100, width: 110, productName: "White" },
+            { imgSrc: "Image/monsterM.jpg", height: 100, width: 45, productName: "Mango" },
+
+            { imgSrc: "Image/monsterB.jpg", height: 100, width: 55, productName: "Blue" },
+            { imgSrc: "Image/mWatermelon.jpg", height: 100, width: 55, productName: "Watermelon/Red" },
+            { imgSrc: "Image/mParadise.jpg", height: 100, width: 55, productName: "Paradise/Light Green" },
+			
+            { imgSrc: "Image/mViolet.jpg", height: 100, width: 55, productName: "Violet/Purple" },
+            { imgSrc: "Image/mFiesta.jpg", height: 100, width: 55, productName: "Fiesta/Light Blue" },
+            { imgSrc: "Image/mPeachy.jpg", height: 100, width: 55, productName: "Peachy" },
+
+
+        ];	
+		
+        const arizonaData = [
+            { imgSrc: "Image/ariGreenTea.jpg", height: 100, width: 110, productName: "Green Tea" },
+            { imgSrc: "Image/ariLemon.jpg", height: 100, width: 45, productName: "Lemon Tea" },
+            { imgSrc: "Image/ariOrange.jpg", height: 100, width: 45, productName: "Orange" },
+
+            { imgSrc: "Image/ariPeach.jpg", height: 100, width: 45, productName: "Peach" },
+            { imgSrc: "Image/ariKiwi.jpg", height: 100, width: 120, productName: "Kiwi" },
+            { imgSrc: "Image/ariEnergy.jpg", height: 100, width: 110, productName: "Energy" },
+			
+            { imgSrc: "Image/ariWatermelon.jpg", height: 100, width: 45, productName: "Watermelon" },
+            { imgSrc: "Image/ariGrape.jpg", height: 100, width: 55, productName: "Grape" },
+            { imgSrc: "Image/ariFruitPunch.jpg", height: 100, width: 40, productName: "Fruit Punch" },
+
+
+        ];	
+		
+        const sPellegrinoData = [
+            { imgSrc: "Image/sOrange.jpg", height: 100, width: 110, productName: "Orange" },
+            { imgSrc: "Image/sBloodOrange.jpg", height: 100, width: 110, productName: "Blood Orange" },
+            { imgSrc: "Image/sLemon.jpg", height: 100, width: 110, productName: "Lemon" },
+
+            { imgSrc: "Image/sGF.jpg", height: 100, width: 110, productName: "Grape Fruit" },
+            { imgSrc: "Image/s250.jpg", height: 110, width: 120, productName: "Sparkling Water 250ml" },
+            { imgSrc: "Image/s750.jpg", height: 100, width: 110, productName: "Sparkling Water 750ml" },
+        ];	
+		
+        const mmData = [
+            { imgSrc: "Image/mApple.jpg", height: 100, width: 110, productName: "Apple" },
+            { imgSrc: "Image/mOrange.jpg", height: 100, width: 110, productName: "Orange" },
+            { imgSrc: "Image/mCran.jpg", height: 100, width: 40, productName: "Cranberry" },
+        ];	
+		
+        const tData = [
+            { imgSrc: "Image/tApple.jpg", height: 100, width: 110, productName: "Apple" },
+            { imgSrc: "Image/tOrange.jpg", height: 100, width: 110, productName: "Orange" },
+            { imgSrc: "Image/tCran.jpg", height: 100, width: 110, productName: "Cranberry" },
+        ];	
+		
+        const vitaData = [
+            { imgSrc: "Image/energy.jpg", height: 100, width: 75, productName: "Energy" },
+            { imgSrc: "Image/essential.jpg", height: 100, width: 110, productName: "Essential" },
+            { imgSrc: "Image/focus.jpg", height: 100, width: 45, productName: "Focus" },
+			
+            { imgSrc: "Image/powerc.jpg", height: 100, width: 45, productName: "Power-C" },
+            { imgSrc: "Image/refresh.jpg", height: 100, width: 45, productName: "Refresh" },
+            { imgSrc: "Image/revive.jpg", height: 100, width: 110, productName: "Revive" },
+			
+            { imgSrc: "Image/xxx.jpg", height: 100, width: 110, productName: "XXX" },
+            { imgSrc: "Image/zeropc.jpg", height: 100, width: 110, productName: "Zero Power-C" },
+            { imgSrc: "Image/zeroxxx.jpg", height: 100, width: 90, productName: "Zero XXX" },
+	
+            { imgSrc: "Image/zerosqueezed.jpg", height: 100, width: 110, productName: "Zero Squeezed" },
+            { imgSrc: "Image/vitaRise.jpg", height: 100, width: 45, productName: "Zero Rise" },
+            { imgSrc: "Image/vitaCoco.jpg", height: 100, width: 45, productName: "Zero Coconut " },
+
+            { imgSrc: "Image/vitaRaspberry.jpg", height: 100, width: 100, productName: "Zero Raspberry" },
+
+        ];	
+
+        const cocoData = [
+            { imgSrc: "Image/foco.jpg", height: 100, width: 55, productName: "Foco 17.6 x24" },
+            { imgSrc: "Image/vita330.jpg", height: 110, width: 120, productName: "Vita 330ml x 12" },
+            { imgSrc: "Image/vita500.jpg", height: 100, width: 110, productName: "Vita 500ml x 12" },
+        ];	
+		
+        const rbData = [
+            { imgSrc: "Image/redbull8.jpg", height: 100, width: 40, productName: "8oz x 24" },
+            { imgSrc: "Image/redbull.jpg", height: 100, width: 120, productName: "12oz x 24" },
+            { imgSrc: "Image/redbull16.jpg", height: 100, width: 110, productName: "16oz x 12" },
+		
+            { imgSrc: "Image/redbull20.jpg", height: 100, width: 110, productName: "20oz x 12" },
+            { imgSrc: "Image/dRedbull8.jpg", height: 100, width: 110, productName: "Diet 8oz x 24" },
+            { imgSrc: "Image/dRedbull12.jpg", height: 100, width: 110, productName: "Diet 12oz x 24" },
+			
+         
+        ];	
+		
+        const nesquikData = [
+            { imgSrc: "Image/nesChoco.jpg", height: 100, width: 110, productName: "Chocolate" },
+            { imgSrc: "Image/nesStrawberry.jpg", height: 100, width: 110, productName: "Strawberry" },
+        ];	
+
+        const nutramentData = [
+            { imgSrc: "Image/nVanilla.jpg", height: 100, width: 110, productName: "Vanilla" },
+            { imgSrc: "Image/nBanana.jpg", height: 100, width: 45, productName: "Banana" },
+            { imgSrc: "Image/nStrawberry.jpg", height: 100, width: 45, productName: "Strawberry" },
+        ];	
+		
+        const starbuckData = [
+            { imgSrc: "Image/sbMocha.jpg", height: 100, width: 110, productName: "Mocha 13.7oz x 12" },
+            { imgSrc: "Image/sbVanilla.jpg", height: 100, width: 100, productName: "Vanilla 13.7oz x 12 " },
+            { imgSrc: "Image/sbCoffee.jpg", height: 100, width: 100, productName: "Coffee 13.7oz x 12" },
+           
+		   { imgSrc: "Image/sbDoubleShot.jpeg", height: 100, width: 100, productName: "Doubleshot Expresso 6.5oz x 12" },
+        ];
+		
+        const waterTable = document.getElementById("waterTable");
+        const canSodaTable = document.getElementById("canSodaTable");
+        const bottlesTable = document.getElementById("bottlesTable");
+        const glassTable = document.getElementById("glassTable");
+        const b10ozTable = document.getElementById("10ozTable");
+        const literTable = document.getElementById("literTable");
+        const twoLiterTable = document.getElementById("twoLiterTable");
+        const gatoradeTable = document.getElementById("gatoradeTable");
+        const gatorade28Table = document.getElementById("gatorade28Table");
+        const monsterTable = document.getElementById("monsterTable");
+        const arizonaTable = document.getElementById("arizonaTable");
+        const sPellegrinoTable = document.getElementById("sPellegrinoTable");
+        const mmJuiceTable = document.getElementById("mmJuiceTable");
+        const tJuiceTable = document.getElementById("tJuiceTable");
+        const vitaTable = document.getElementById("vitaTable");
+        const rbTable = document.getElementById("rbTable");
+        const nesquikTable = document.getElementById("nesquikTable");
+        const nutramentTable = document.getElementById("nutramentTable");
+        const starbuckTable = document.getElementById("starbuckTable");
+
+		
+        function createTableRows(table, data) {
+            let rows = '';
+            for (let i = 0; i < data.length; i += 3) {
+                let row = '<tr>';
+                for (let j = i; j < Math.min(i + 3, data.length); j++) {
+                    row += `
+                        <td><img src="${data[j].imgSrc}" alt="${data[j].productName}" height="${data[j].height}" width="${data[j].width}"></td>
+                        <th>${data[j].productName}</th>
+                    `;
+                }
+                row += '</tr>';
+                rows += row;
+            }
+            table.innerHTML = rows;
+        }
+        createTableRows(waterTable, waterData);
+        createTableRows(canSodaTable, canSodaData);
+        createTableRows(bottlesTable, bottlesData);
+        createTableRows(glassTable, glassData);
+		createTableRows(b10ozTable, b10ozData);
+		createTableRows(literTable, literData);
+		createTableRows(twoLiterTable, twoLiterData);
+		createTableRows(gatoradeTable, gataradeData);
+		createTableRows(gatorade28Table, gatarade28Data);	
+		createTableRows(monsterTable, monsterData);	
+		createTableRows(arizonaTable, arizonaData);
+		createTableRows(sPellegrinoTable, sPellegrinoData);
+		createTableRows(mmJuiceTable, mmData);
+		createTableRows(tJuiceTable, tData);
+		createTableRows(vitaTable, vitaData);
+		createTableRows(cocoTable, cocoData);
+		createTableRows(rbTable, rbData);
+		createTableRows(nesquickTable, nesquikData);
+		createTableRows(nutramentTable, nutramentData);
+		createTableRows(starbuckTable, starbuckData);
+
+    </script>
+</body>
+</html>
