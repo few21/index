@@ -348,6 +348,15 @@
         <hr>
     </div>	
 	
+    <div style="align:center;">
+        <h2 id="snapple"> Snapple</h2>
+        <table align=center id="snappleTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>	
 	
 	
     <script>
@@ -372,7 +381,7 @@
             { imgSrc: "Image/fiji16.jpg", height: 100, width: 90, productName: "Fiji 16oz x 24" },
             { imgSrc: "Image/fiji15.jpg", height: 100, width: 90, productName: "Fiji 1.5L x 12" },	
 			
-            { imgSrc: "Image/evian1L.jpg", height: 100, width: 90, productName: "Evian 1L x 12" },
+            { imgSrc: "Image/evian1l.jpg", height: 100, width: 90, productName: "Evian 1L x 12" },
             { imgSrc: "Image/evian15.jpg", height: 100, width: 90, productName: "Evian 1.5L x 12" },
             { imgSrc: "Image/evian16.jpg", height: 100, width: 90, productName: "Evian 500ml x 24" },	
 
@@ -418,7 +427,6 @@
             { imgSrc: "Image/welchGrape.jpg", height: 100, width: 110, productName: "Welch Grape" },
 
             { imgSrc: "Image/hawaiian.jpg", height: 100, width: 100, productName: "Hawaiian Punch" },
-            { imgSrc: "Image/sunkistgrape.jpg", height: 100, width: 100, productName: "Sunkist Grape" },
             { imgSrc: "Image/sunkistOrange.jpg", height: 100, width: 55, productName: "Sunkist Orange" },	
 			
             { imgSrc: "Image/dietsunkist.jpg", height: 100, width: 100, productName: "Diet Sunkist Orange" },
@@ -429,7 +437,16 @@
             { imgSrc: "Image/7up.jpg", height: 100, width: 110, productName: "7up" },
             { imgSrc: "Image/mountain.jpg", height: 100, width: 110, productName: "Mountain Dew" },				
 			
-            { imgSrc: "Image/drpepper.jpg", height: 100, width: 100, productName: "Dr. Pepper" },
+            { imgSrc: "Image/drCream.jpg", height: 100, width: 70, productName: "Dr. Brown's Cream Soda" },
+            { imgSrc: "Image/drDCream.jpg", height: 100, width: 55, productName: "Dr. Brown's Diet Cream Soda" },
+            { imgSrc: "Image/drCherry.jpg", height: 100, width: 110, productName: "Dr. Brown's Black Cherry" },				
+						
+            { imgSrc: "Image/drDCherry.jpg", height: 100, width: 55, productName: "Dr. Brown's Diet Black Cherry" },				
+   
+
+
+
+			{ imgSrc: "Image/drpepper.jpg", height: 100, width: 100, productName: "Dr. Pepper" },
             { imgSrc: "Image/dietpepper.jpg", height: 100, width: 100, productName: "Diet Dr. Pepper" },
             { imgSrc: "Image/herbalTea.jpg", height: 100, width: 110, productName: "王老吉 Herbal Tea" },				
 			
@@ -437,8 +454,8 @@
         ];
 
         const bottlesData = [
-            { imgSrc: "Image/bCoke.jpg", height: 100, width: 100, productName: "Coca Cola" },
-            { imgSrc: "Image/bDcoke.jpg", height: 100, width: 65, productName: "Diet Coca Cola" },
+            { imgSrc: "Image/bCoke.jpg", height: 100, width: 105, productName: "Coca Cola" },
+            { imgSrc: "Image/bDCoke.jpg", height: 100, width: 52, productName: "Diet Coca Cola" },
             { imgSrc: "Image/bCokeZ.jpg", height: 100, width: 100, productName: "Coke Zero" },
 
             { imgSrc: "Image/bcherrycoke.jpg", height: 100, width: 40, productName: "Cherry Coke" },
@@ -649,7 +666,7 @@
         ];	
 		
         const tData = [
-            { imgSrc: "Image/tApple.jpg", height: 100, width: 110, productName: "Apple" },
+            { imgSrc: "Image/tApple.jpg", height: 100, width: 35, productName: "Apple" },
             { imgSrc: "Image/tOrange.jpg", height: 100, width: 110, productName: "Orange" },
             { imgSrc: "Image/tCran.jpg", height: 100, width: 110, productName: "Cranberry" },
         ];	
@@ -702,7 +719,9 @@
             { imgSrc: "Image/nVanilla.jpg", height: 100, width: 110, productName: "Vanilla" },
             { imgSrc: "Image/nBanana.jpg", height: 100, width: 45, productName: "Banana" },
             { imgSrc: "Image/nStrawberry.jpg", height: 100, width: 45, productName: "Strawberry" },
-        ];	
+            { imgSrc: "Image/nChoco.jpg", height: 100, width: 45, productName: "Chocolate" },
+
+	   ];	
 		
         const starbuckData = [
             { imgSrc: "Image/sbMocha.jpg", height: 100, width: 110, productName: "Mocha 13.7oz x 12" },
@@ -710,6 +729,31 @@
             { imgSrc: "Image/sbCoffee.jpg", height: 100, width: 100, productName: "Coffee 13.7oz x 12" },
            
 		   { imgSrc: "Image/sbDoubleShot.jpeg", height: 100, width: 100, productName: "Doubleshot Expresso 6.5oz x 12" },
+        ];
+
+        const snappleData = [
+            { imgSrc: "Image/apple16.jpg", height: 100, width: 55, productName: "Apple" },
+            { imgSrc: "Image/banana16.jpg", height: 100, width: 40, productName: "Banana" },
+            { imgSrc: "Image/mango.jpg", height: 100, width: 55, productName: "Mango" },
+           
+            { imgSrc: "Image/fp16.jpg", height: 100, width: 55, productName: "Fruit Punch" },
+            { imgSrc: "Image/grapeade.jpg", height: 100, width: 55, productName: "Grapeade" },
+            { imgSrc: "Image/gt.jpg", height: 100, width: 35, productName: "Green Tea" },
+          
+            { imgSrc: "Image/kiwi.jpg", height: 100, width: 55, productName: "Kiwi/Strawberry" },
+            { imgSrc: "Image/lemon.jpg", height: 100, width: 55, productName: "Lemon" },
+            { imgSrc: "Image/orange.jpg", height: 100, width: 55, productName: "Orange" },
+         
+			{ imgSrc: "Image/pt.jpg", height: 100, width: 110, productName: "Peach Tea" },
+            { imgSrc: "Image/hh.jpg", height: 100, width: 100, productName: "Half & Half" },
+            { imgSrc: "Image/rp.jpg", height: 100, width: 100, productName: "Raspberry" },
+            
+            { imgSrc: "Image/dp.jpg", height: 100, width: 110, productName: "Diet Peach" },
+            { imgSrc: "Image/dietlemon.jpg", height: 100, width: 35, productName: "Diet Lemon" },
+            { imgSrc: "Image/drp.jpg", height: 100, width: 100, productName: "Diet Raspberry" },
+           
+			
+			
         ];
 		
         const waterTable = document.getElementById("waterTable");
@@ -731,6 +775,7 @@
         const nesquikTable = document.getElementById("nesquikTable");
         const nutramentTable = document.getElementById("nutramentTable");
         const starbuckTable = document.getElementById("starbuckTable");
+        const snappleTable = document.getElementById("snappleTable");
 
 		
         function createTableRows(table, data) {
@@ -768,6 +813,7 @@
 		createTableRows(nesquickTable, nesquikData);
 		createTableRows(nutramentTable, nutramentData);
 		createTableRows(starbuckTable, starbuckData);
+		createTableRows(snappleTable, snappleData);
 
     </script>
 </body>
