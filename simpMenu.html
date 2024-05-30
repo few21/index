@@ -26,6 +26,7 @@
 			background-color: #f9f9f9;
 			border: 1px solid #ccc;
 			cursor: pointer;
+			
   }
 
 		.dropdown-content {
@@ -35,6 +36,8 @@
 			min-width: 160px;
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 			z-index: 1;
+			width: auto;
+			max-width: 400px;
 		  }
 
 		.dropdown-content a {
@@ -42,6 +45,7 @@
 			padding: 12px 16px;
 			text-decoration: none;
 			display: block;
+			flex: 0 0 25%;
 		  }
 
 		.dropdown-content a:hover {
@@ -82,7 +86,7 @@
 		<div style="text-align:center;">
 			<div class="dropdown">
 			  <button onclick="toggleDropdown()" class="dropbtn">Menu List</button>
-			  <div class="dropdown-content">
+			  <div class="dropdown-content" id="myDropdown">
 				<a href="#water">Water</a>
 				<a href="#can">Can Soda</a>
 				<a href="#20oz">20oz Bottles</a>
@@ -93,6 +97,8 @@
 				<a href="#gat">Gatorade 20oz</a>
 				<a href="#gat28">Gatorade 28oz</a>
 				<a href="#monster">Monster Energy</a>
+				<a href="#celcius">Celcius</a>
+				<a href="#c4">C4</a>
 				<a href="#arizona">Arizona</a>
 				<a href="#sPellegrino">San Pellegrino</a>
 				<a href="#minutemaid">Minute Maid</a>
@@ -241,6 +247,26 @@
     <div style="align:center;">
         <h2 id="monster"> Monster</h2>
         <table align=center id="monsterTable"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+    <div style="align:center;">
+        <h2 id="celcius"> Celcius 12oz</h2>
+        <table align=center id="celciusTable"></table>
+	
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+    <div style="align:center;">
+        <h2 id="c4"> C4 12oz</h2>
+        <table align=center id="C4Table"></table>
 
         <div style="text-align:center">
             <a href="#top">Top</a>
@@ -627,8 +653,28 @@
             { imgSrc: "Image/mViolet.jpg", height: 100, width: 55, productName: "Violet/Purple" },
             { imgSrc: "Image/mFiesta.jpg", height: 100, width: 55, productName: "Fiesta/Light Blue" },
             { imgSrc: "Image/mPeachy.jpg", height: 100, width: 55, productName: "Peachy" },
+        ];	
+		
+        const celciusData = [
+            { imgSrc: "Image/celOrange.jpg", height: 100, width: 110, productName: "Orange" },
+            { imgSrc: "Image/celKiwi.jpg", height: 100, width: 110, productName: "Kiwi Guava" },
+            { imgSrc: "Image/celBerry.jpg", height: 100, width: 35, productName: "Wild Berry" },
 
+            { imgSrc: "Image/celPeach.jpg", height: 100, width: 110, productName: "Peach" },
+            { imgSrc: "Image/celTropical.jpg", height: 100, width: 110, productName: "Tropical" },
+            { imgSrc: "Image/celFBerry.jpg", height: 100, width: 110, productName: "Frozen Berry" },
+			
+        ];	
 
+        const C4Data = [
+            { imgSrc: "Image/c4Peach.jpg", height: 100, width: 110, productName: "Peach Mango" },
+            { imgSrc: "Image/c4Watermelon.jpg", height: 100, width: 110, productName: "Watermelon" },
+            { imgSrc: "Image/c4PassionFruit.jpg", height: 100, width: 110, productName: "Passion Fruit" },
+
+            { imgSrc: "Image/c4BloodOrange.jpg", height: 100, width: 110, productName: "Blood Orange" },
+            { imgSrc: "Image/c4Strawberry.jpg", height: 100, width: 110, productName: "Strawberry" },
+            { imgSrc: "Image/c4CherryLime.jpg", height: 100, width: 110, productName: "Cherry Lime" },
+			
         ];	
 		
         const arizonaData = [
@@ -753,9 +799,7 @@
             { imgSrc: "Image/dp.jpg", height: 100, width: 110, productName: "Diet Peach" },
             { imgSrc: "Image/dietlemon.jpg", height: 100, width: 35, productName: "Diet Lemon" },
             { imgSrc: "Image/drp.jpg", height: 100, width: 100, productName: "Diet Raspberry" },
-           
-			
-			
+           	
         ];
 		
         const waterTable = document.getElementById("waterTable");
@@ -768,6 +812,8 @@
         const gatoradeTable = document.getElementById("gatoradeTable");
         const gatorade28Table = document.getElementById("gatorade28Table");
         const monsterTable = document.getElementById("monsterTable");
+        const celciusTable = document.getElementById("celciusTable");
+        const C4Table = document.getElementById("C4Table");
         const arizonaTable = document.getElementById("arizonaTable");
         const sPellegrinoTable = document.getElementById("sPellegrinoTable");
         const mmJuiceTable = document.getElementById("mmJuiceTable");
@@ -805,6 +851,8 @@
 		createTableRows(gatoradeTable, gataradeData);
 		createTableRows(gatorade28Table, gatarade28Data);	
 		createTableRows(monsterTable, monsterData);	
+		createTableRows(celciusTable, celciusData);	
+		createTableRows(C4Table, C4Data);	
 		createTableRows(arizonaTable, arizonaData);
 		createTableRows(sPellegrinoTable, sPellegrinoData);
 		createTableRows(mmJuiceTable, mmData);
