@@ -98,7 +98,8 @@
 				<a href="#gat28">Gatorade 28oz</a>
 				<a href="#monster">Monster Energy</a>
 				<a href="#celcius">Celcius</a>
-				<a href="#c4">C4</a>
+				<a href="#c412oz">C4 12oz</a>
+				<a href="#c416oz">C4 16oz</a>
 				<a href="#arizona">Arizona</a>
 				<a href="#sPellegrino">San Pellegrino</a>
 				<a href="#minutemaid">Minute Maid</a>
@@ -265,8 +266,18 @@
     </div>
 	
     <div style="align:center;">
-        <h2 id="c4"> C4 12oz</h2>
+        <h2 id="c412oz"> C4 12oz</h2>
         <table align=center id="C4Table"></table>
+
+        <div style="text-align:center">
+            <a href="#top">Top</a>
+        </div>
+        <hr>
+    </div>
+	
+    <div style="align:center;">
+        <h2 id="c416oz"> C4 16oz</h2>
+        <table align=center id="C4_16Table"></table>
 
         <div style="text-align:center">
             <a href="#top">Top</a>
@@ -676,6 +687,19 @@
             { imgSrc: "Image/c4CherryLime.jpg", height: 100, width: 110, productName: "Cherry Lime" },
 			
         ];	
+
+        const C4_16Data = [
+            { imgSrc: "Image/c4_16Grape.jpg", height: 100, width: 110, productName: "Grape" },
+            { imgSrc: "Image/c4_16SB.jpg", height: 100, width: 110, productName: "Starburst" },
+            { imgSrc: "Image/c4_16FB.jpg", height: 100, width: 110, productName: "Frozen Bombsicle" },
+
+            { imgSrc: "Image/c4_16Skittles.jpg", height: 100, width: 110, productName: "Skittles" },
+            { imgSrc: "Image/c4_16Orange.jpg", height: 100, width: 45, productName: "Orange" },
+            { imgSrc: "Image/c4_16UPowerBomb.jpg", height: 100, width: 110, productName: "Ultimate Berry Powerbomb" },
+			
+            { imgSrc: "Image/c4_16URaspberry.jpg", height: 100, width: 110, productName: "Ultimate Ruthless Raspberry" },
+
+        ];
 		
         const arizonaData = [
             { imgSrc: "Image/ariGreenTea.jpg", height: 100, width: 110, productName: "Green Tea" },
@@ -814,6 +838,7 @@
         const monsterTable = document.getElementById("monsterTable");
         const celciusTable = document.getElementById("celciusTable");
         const C4Table = document.getElementById("C4Table");
+        const C4_16Table = document.getElementById("C4_16Table");
         const arizonaTable = document.getElementById("arizonaTable");
         const sPellegrinoTable = document.getElementById("sPellegrinoTable");
         const mmJuiceTable = document.getElementById("mmJuiceTable");
@@ -853,6 +878,7 @@
 		createTableRows(monsterTable, monsterData);	
 		createTableRows(celciusTable, celciusData);	
 		createTableRows(C4Table, C4Data);	
+		createTableRows(C4_16Table, C4_16Data);	
 		createTableRows(arizonaTable, arizonaData);
 		createTableRows(sPellegrinoTable, sPellegrinoData);
 		createTableRows(mmJuiceTable, mmData);
