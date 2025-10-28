@@ -98,7 +98,6 @@
 				<a href="#gat28">Gatorade 28oz</a>
 				<a href="#monster">Monster Energy</a>
 				<a href="#celcius">Celcius</a>
-				<a href="#c412oz">C4 12oz</a>
 				<a href="#c416oz">C4 16oz</a>
 				<a href="#arizona">Arizona</a>
 				<a href="#sPellegrino">San Pellegrino</a>
@@ -107,7 +106,7 @@
 				<a href="#vitamin">Vitamin Water</a>
 				<a href="#coconut">Coconut Water</a>
 				<a href="#redbull">RedBull</a>
-				<a href="#nesquik">Nesquik</a>
+				<a href="#core">Core Power</a>
 				<a href="#nutrament">Nutrament</a>
 				<a href="#starbuck">Starbuck</a>
 				<a href="#snapple">Snapple</a>
@@ -265,15 +264,7 @@
         <hr>
     </div>
 	
-    <div style="align:center;">
-        <h2 id="c412oz"> C4 12oz</h2>
-        <table align=center id="C4Table"></table>
 
-        <div style="text-align:center">
-            <a href="#top">Top</a>
-        </div>
-        <hr>
-    </div>
 	
     <div style="align:center;">
         <h2 id="c416oz"> C4 16oz</h2>
@@ -354,17 +345,16 @@
         </div>
         <hr>
     </div>	
-		
-	
+			
     <div style="align:center;">
-        <h2 id="nesquik"> Nesquik 14oz x 12</h2>
-        <table align=center id="nesquickTable"></table>
+        <h2 id="core"> Core Power 42g</h2>
+        <table align=center id="coreTable"></table>
 
         <div style="text-align:center">
             <a href="#top">Top</a>
         </div>
         <hr>
-    </div>	
+    </div>		
 	
     <div style="align:center;">
         <h2 id="nutrament"> Nutrament 12oz x 12</h2>
@@ -647,13 +637,13 @@
             { imgSrc: "Image/white.jpg", height: 100, width: 110, productName: "White" },
             { imgSrc: "Image/monsterM.jpg", height: 100, width: 45, productName: "Mango" },
 
-            { imgSrc: "Image/monsterB.jpg", height: 100, width: 55, productName: "Blue" },
-            { imgSrc: "Image/mWatermelon.jpg", height: 100, width: 55, productName: "Watermelon/Red" },
-            { imgSrc: "Image/mParadise.jpg", height: 100, width: 55, productName: "Paradise/Light Green" },
+            { imgSrc: "Image/monsterB.jpg", height: 100, width: 43, productName: "Blue" },
+            { imgSrc: "Image/mWatermelon.jpg", height: 100, width: 43, productName: "Watermelon/Red" },
+            { imgSrc: "Image/mParadise.jpg", height: 100, width: 43, productName: "Paradise/Light Green" },
 			
-            { imgSrc: "Image/mViolet.jpg", height: 100, width: 55, productName: "Violet/Purple" },
-            { imgSrc: "Image/mFiesta.jpg", height: 100, width: 55, productName: "Fiesta/Light Blue" },
-            { imgSrc: "Image/mPeachy.jpg", height: 100, width: 55, productName: "Peachy" },
+            { imgSrc: "Image/mViolet.jpg", height: 100, width: 43, productName: "Violet/Purple" },
+            { imgSrc: "Image/mFiesta.jpg", height: 100, width: 43, productName: "Fiesta/Light Blue" },
+            { imgSrc: "Image/mPeachy.jpg", height: 100, width: 43, productName: "Peachy" },
         ];	
 		
         const celciusData = [
@@ -667,16 +657,7 @@
 			
         ];	
 
-        const C4Data = [
-            { imgSrc: "Image/c4Peach.jpg", height: 100, width: 110, productName: "Peach Mango" },
-            { imgSrc: "Image/c4Watermelon.jpg", height: 100, width: 110, productName: "Watermelon" },
-            { imgSrc: "Image/c4PassionFruit.jpg", height: 100, width: 110, productName: "Passion Fruit" },
-
-            { imgSrc: "Image/c4BloodOrange.jpg", height: 100, width: 110, productName: "Blood Orange" },
-            { imgSrc: "Image/c4Strawberry.jpg", height: 100, width: 110, productName: "Strawberry" },
-            { imgSrc: "Image/c4CherryLime.jpg", height: 100, width: 110, productName: "Cherry Lime" },
-			
-        ];	
+	
 
         const C4_16Data = [
             { imgSrc: "Image/c4_16Grape.jpg", height: 100, width: 110, productName: "Grape" },
@@ -685,9 +666,7 @@
 
             { imgSrc: "Image/c4_16Skittles.jpg", height: 100, width: 110, productName: "Skittles" },
             { imgSrc: "Image/c4_16Orange.jpg", height: 100, width: 45, productName: "Orange" },
-            { imgSrc: "Image/c4_16UPowerBomb.jpg", height: 100, width: 110, productName: "Ultimate Berry Powerbomb" },
-			
-            { imgSrc: "Image/c4_16URaspberry.jpg", height: 100, width: 110, productName: "Ultimate Ruthless Raspberry" },
+
 
         ];
 		
@@ -717,6 +696,7 @@
 
             { imgSrc: "Image/sGF.jpg", height: 100, width: 110, productName: "Grape Fruit" },
             { imgSrc: "Image/s250.jpg", height: 110, width: 120, productName: "Sparkling Water 250ml" },
+            { imgSrc: "Image/s500.jpg", height: 110, width: 120, productName: "Sparkling Water 500ml" },
             { imgSrc: "Image/s750.jpg", height: 100, width: 110, productName: "Sparkling Water 750ml" },
         ];	
 		
@@ -738,25 +718,26 @@
             { imgSrc: "Image/focus.jpg", height: 100, width: 45, productName: "Focus" },
 			
             { imgSrc: "Image/powerc.jpg", height: 100, width: 45, productName: "Power-C" },
-            { imgSrc: "Image/refresh.jpg", height: 100, width: 45, productName: "Refresh" },
+            { imgSrc: "Image/refresh.jpg", height: 100, width: 40, productName: "Refresh" },
             { imgSrc: "Image/revive.jpg", height: 100, width: 110, productName: "Revive" },
 			
             { imgSrc: "Image/xxx.jpg", height: 100, width: 110, productName: "XXX" },
-            { imgSrc: "Image/zeropc.jpg", height: 100, width: 110, productName: "Zero Power-C" },
-            { imgSrc: "Image/zeroxxx.jpg", height: 100, width: 90, productName: "Zero XXX" },
+            { imgSrc: "Image/zeroBRasp.jpg", height: 100, width: 110, productName: "Blue Raspberry" },
+            { imgSrc: "Image/zeroxxx.jpg", height: 100, width: 80, productName: "Zero XXX" },
 	
-            { imgSrc: "Image/zerosqueezed.jpg", height: 100, width: 110, productName: "Zero Squeezed" },
-            { imgSrc: "Image/vitaRise.jpg", height: 100, width: 45, productName: "Zero Rise" },
-            { imgSrc: "Image/vitaCoco.jpg", height: 100, width: 45, productName: "Zero Coconut " },
+            { imgSrc: "Image/zerosqueezed.jpg", height: 100, width: 110, productName: "Zero Squeezed" }, 
+            { imgSrc: "Image/vitaRise.jpg", height: 100, width: 40, productName: "Zero Rise" },
+            { imgSrc: "Image/vitaPineapple.jpg", height: 100, width: 110, productName: "Zero Pineapple Passionfruit " },
 
             { imgSrc: "Image/vitaRaspberry.jpg", height: 100, width: 100, productName: "Zero Raspberry" },
+            { imgSrc: "Image/zeropc.jpg", height: 100, width: 110, productName: "Zero Power-C" },
 
         ];	
 
         const cocoData = [
-            { imgSrc: "Image/foco.jpg", height: 100, width: 55, productName: "Foco 17.6 x24" },
+            { imgSrc: "Image/foco11.jpg", height: 100, width: 100, productName: "Foco 11.8oz x24" },
+            { imgSrc: "Image/foco.jpg", height: 120, width: 55, productName: "Foco 17.6oz x24" },
             { imgSrc: "Image/vita330.jpg", height: 110, width: 120, productName: "Vita 330ml x 12" },
-            { imgSrc: "Image/vita500.jpg", height: 100, width: 110, productName: "Vita 500ml x 12" },
         ];	
 		
         const rbData = [
@@ -771,11 +752,12 @@
          
         ];	
 		
-        const nesquikData = [
-		    { imgSrc: "Image/nesVanilla.jpg", height: 100, width: 110, productName: "Vanilla" },
-            { imgSrc: "Image/nesChoco.jpg", height: 100, width: 110, productName: "Chocolate" },
-            { imgSrc: "Image/nesStrawberry.jpg", height: 100, width: 110, productName: "Strawberry" },
-        ];	
+		const coreData = [
+            { imgSrc: "Image/coreVanilla.jpg", height: 100, width: 40, productName: "Vanilla" },
+            { imgSrc: "Image/coreStrawberry.jpg", height: 100, width: 40, productName: "Strawberry" },
+            { imgSrc: "Image/coreChoco.jpg", height: 100, width: 45, productName: "Chocolate" },
+
+	   ];
 
         const nutramentData = [
             { imgSrc: "Image/nVanilla.jpg", height: 100, width: 110, productName: "Vanilla" },
@@ -790,7 +772,6 @@
             { imgSrc: "Image/sbVanilla.jpg", height: 100, width: 100, productName: "Vanilla 13.7oz x 12 " },
             { imgSrc: "Image/sbCoffee.jpg", height: 100, width: 100, productName: "Coffee 13.7oz x 12" },
            
-		   { imgSrc: "Image/sbDoubleShot.jpeg", height: 100, width: 100, productName: "OUT OF STOCK<hr>Doubleshot Expresso 6.5oz x 12" },
         ];
 
         const snappleData = [
@@ -835,7 +816,7 @@
         const tJuiceTable = document.getElementById("tJuiceTable");
         const vitaTable = document.getElementById("vitaTable");
         const rbTable = document.getElementById("rbTable");
-        const nesquikTable = document.getElementById("nesquikTable");
+        const coreTable = document.getElementById("coreTable");
         const nutramentTable = document.getElementById("nutramentTable");
         const starbuckTable = document.getElementById("starbuckTable");
         const snappleTable = document.getElementById("snappleTable");
@@ -867,7 +848,7 @@
 		createTableRows(gatorade28Table, gatarade28Data);	
 		createTableRows(monsterTable, monsterData);	
 		createTableRows(celciusTable, celciusData);	
-		createTableRows(C4Table, C4Data);	
+	
 		createTableRows(C4_16Table, C4_16Data);	
 		createTableRows(arizonaTable, arizonaData);
 		createTableRows(sPellegrinoTable, sPellegrinoData);
@@ -876,7 +857,7 @@
 		createTableRows(vitaTable, vitaData);
 		createTableRows(cocoTable, cocoData);
 		createTableRows(rbTable, rbData);
-		createTableRows(nesquickTable, nesquikData);
+		createTableRows(coreTable, coreData);
 		createTableRows(nutramentTable, nutramentData);
 		createTableRows(starbuckTable, starbuckData);
 		createTableRows(snappleTable, snappleData);
